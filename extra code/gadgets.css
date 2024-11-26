@@ -1,0 +1,218 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    outline-style: none;
+}
+
+html {
+    font-size: 12px;
+    color: #000;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root{
+    --txtaccent: #110d0d;
+    --txtaccent1: #9D9D9F;
+    --textaccent2: #73757E;
+    --textaccent3: #484848;
+    --txtaccent4: #4bd8d1;
+    --txtaccent5: #dfe0dd;
+    --haccent: #FFCB0F;
+    --haccent_withOpacity: rgba(255, 203, 15,0.6);
+    --haccent2: #C79E23;
+    --bgaccent: #71f5b7;
+    --bgaccent_withOpacity: rgba(26, 28, 39,0.96);
+}
+.container{
+    width: 95%;
+    margin: 0px auto;
+    padding: 0px;
+}
+/* SECTION 4 */
+#sec-4{
+    /* background:  url(../img/1.avif) no-repeat center center/cover; */
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+}
+#sec-4 h1{
+    text-transform: uppercase;
+    font-size: 1.7rem;
+    margin-bottom: 1.6rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* color: var(--txtaccent); */
+    color: #008080;
+    font-weight: 800;
+}
+#sec-4 p{
+    /* color: var(--txtaccent); */
+    color: #000;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 0.9rem;
+    padding: 0px 6rem;
+    margin-bottom: 2rem;
+}
+#sec-4 .filter{
+    margin-bottom: 2rem;
+    padding: 0px 6rem;
+}
+#sec-4 .filter a{
+    display: inline-block;
+    padding: 3px 20px 5px;
+    border-radius: 15px;
+    color: var(--txtaccent);
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: background-color 0.65s ease;
+    font-size: 0.85rem;
+}
+#sec-4 .filter a:hover{
+    background-color: var(--bgaccent);
+}
+#sec-4 .cont{
+    width: 50%;
+    margin: 0px auto;
+}
+#sec-4 .cont>img{
+    width: 100%;
+    display: block;
+    margin: 0px auto 20px;
+    /* margin-right: -50%; */
+
+}
+/* #sec-4 aside{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+} */
+#sec-4 aside img{
+    margin-bottom: 10px;
+    width: 48%;
+    position:center;
+    /* border: 1.7px solid black; */
+    
+}
+
+.video-container {
+    position: relative;
+    width: 750px;
+    /* height: 800px; */
+    /* border: 1px solid black; */
+    /* margin right: 10px ; */
+    margin-left: -95px;
+}
+
+/* Styling the section */
+
+
+
+
+/* Image gallery layout: two images per row */
+#sec-4 aside {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two images per row */
+    grid-gap: 20px; /* Space between images */
+    margin-top: 20px;
+}
+
+/* Styling for each figure (image + caption) */
+#sec-4 aside figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#sec-4 aside img {
+    width: 50%;
+    /* border: 2px solid black; */
+    transition: transform 0.3s ease; /* Animation for hover effect */
+}
+
+#sec-4 aside img:hover {
+    transform: scale(1.05); /* Slight zoom-in effect on hover */
+}
+
+/* Figcaption styles for image labels */
+#sec-4 aside figcaption {
+    margin-top: 5px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #000;
+    text-align: center;
+}
+
+/* /////////////////////////////////////////End on Gadgets///////////////////////////////////////////////////////// */
+
+
+/*MEDIA QUERRIES*/
+/*Smart phones */
+@media (min-width: 576px) {
+    html{
+        font-size: 13px;
+    }
+    .container {
+        width: 520px;
+    }
+    
+}
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    html{
+        font-size: 14px;
+    }
+    .container {
+        width: 720px;
+    }
+    
+    #sec-4 .cont{
+        width: 100%;
+        margin: 0px;
+    }
+    #sec-4 aside img{
+        margin-bottom: 15px;
+        width: 48%;
+    }
+   
+}
+/* Standard PC screens */
+@media (min-width: 1200px) {
+    html{
+        font-size: 15px;
+    }
+    .container {
+        width: 1140px;
+    }
+   
+    #sec-4 .cont{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
+    #sec-4 .cont>img{
+        width: 50%;
+        margin: 0px;
+    }
+    #sec-4 aside{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        width: 49%;
+        gap: 10px;
+    }
+    #sec-4 aside img{
+        width: 49%;
+        margin: 0px;
+    }
+}
+@media (min-width: 1400px) {
+    html{
+        font-size: 17px;
+    }
+    .container {
+        width: 1340px;
+    }
+}
+
+

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Pie Chart</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            margin: 0;
+        }
+
+        .chart-container {
+            position: relative;
+            width: 500px;
+            height: 500px;
+        }
+
+        svg {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .segment {
+            transform-origin: center;
+            transition: transform 0.3s ease, fill 0.3s ease;
+        }
+
+        .segment:hover {
+            transform: scale(1.1);
+        }
+
+        .labels {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
+
+        .label {
+            position: absolute;
+            color: #333;
+            font-weight: bold;
+            font-size: 0.9em;
+            text-align: center;
+        }
+
+        .center-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 150px;
+            height: 150px;
+            background: white;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .center-content img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="chart-container">
+        <svg viewBox="0 0 42 42" width="100%" height="100%">
+            <!-- Segment 1 -->
+            <circle class="segment" cx="21" cy="21" r="15.91549431" fill="transparent" stroke="#ff6f61" stroke-width="8" stroke-dasharray="11.11 88.89" stroke-dashoffset="0"></circle>
+            <!-- Segment 2 -->
+            <circle class="segment" cx="21" cy="21" r="15.91549431" fill="transparent" stroke="#f7b267" stroke-width="8" stroke-dasharray="11.11 88.89" stroke-dashoffset="11.11"></circle>
+            <!-- Segment 3 -->
+            <circle class="segment" cx="21" cy="21" r="15.91549431" fill="transparent" stroke="#f7d065" stroke-width="8" stroke-dasharray="11.11 88.89" stroke-dashoffset="22.22"></circle>
+            <!-- Segment 4 -->
+            <circle class="segment" cx="21" cy="21" r="15.91549431" fill="transparent" stroke="#88e1f2" stroke-width="8" stroke-dasharray="11.11 88.89" stroke-dashoffset="33.33"></circle>
+            <!-- Segment 5 -->
+            <circle class="segment" cx="21" cy="21" r="15.91549431" fill="transparent" stroke="#61c0bf" stroke-width="8" stroke-dasharray="11.11 88.89" stroke-dashoffset="44.44"></circle>
+            <!-- Segment 6 -->
+            <circle class="segment" cx="21" cy="21" r="15.91549431" fill="transparent" stroke="#6a0572" stroke-width="8" stroke-dasharray="11.11 88.89" stroke-dashoffset="55.55"></circle>
+            <!-- Segment 7 -->
+            <circle class="segment" cx="21" cy="21" r="15.91549431" fill="transparent" stroke="#c06c84" stroke-width="8" stroke-dasharray="11.11 88.89" stroke-dashoffset="66.66"></circle>
+            <!-- Segment 8 -->
+            <circle class="segment" cx="21" cy="21" r="15.91549431" fill="transparent" stroke="#355c7d" stroke-width="8" stroke-dasharray="11.11 88.89" stroke-dashoffset="77.77"></circle>
+            <!-- Segment 9 -->
+            <circle class="segment" cx="21" cy="21" r="15.91549431" fill="transparent" stroke="#f67280" stroke-width="8" stroke-dasharray="11.11 88.89" stroke-dashoffset="88.88"></circle>
+        </svg>
+        
+        <div class="labels">
+            <!-- Labels positioned around the chart -->
+            <div class="label" style="top: 5%; left: 50%; transform: translateX(-50%);">PORT AND HARBOURS</div>
+            <div class="label" style="top: 20%; left: 80%; transform: translateX(-50%);">INLAND WATERWAYS</div>
+            <div class="label" style="top: 40%; right: 0%; transform: translateX(-50%);">MARITIME BOARDS</div>
+            <div class="label" style="top: 60%; right: 0%; transform: translateX(-50%);">CAPTIVE JETTIES</div>
+            <div class="label" style="bottom: 20%; right: 10%; transform: translateX(-50%);">SHIPYARDS</div>
+            <div class="label" style="bottom: 10%; left: 60%; transform: translateX(-50%);">OIL AND GAS</div>
+            <div class="label" style="bottom: 5%; left: 30%; transform: translateX(-50%);">COASTAL PROTECTION</div>
+            <div class="label" style="bottom: 20%; left: 5%; transform: translateX(-50%);">RECREATION WATER BODIES</div>
+            <div class="label" style="top: 40%; left: 0%; transform: translateX(-50%);">AGRICULTURE</div>
+        </div>
+
+        <!-- Center Image or Content -->
+        <div class="center-content">
+            <img src="https://via.placeholder.com/150" alt="Center Image">
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Testimonials Section</title>
+  <!-- Include Bootstrap CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-pzjw8f+ua7Kw1T8RXyjE6JfAYyZL6w8qkDgSn1OciAopwJQ6BV6AIqVJmQAG3do9" crossorigin="anonymous">
+
+  <!-- Correct Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      color: #181818;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+      padding: 20px;
+      background-color: #f4f4f4;
+    }
+
+    .service-container {
+      /* background-color: #e7e5e5; */
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      width: 100%;
+      max-width: 800px;
+      max-height: 100vh;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .service-container h2 {
+      margin-bottom: 20px;
+      color: #dd5f0a;
+    }
+
+    .service-container p {
+      text-align: justify;
+    }
+
+    .service {
+      display: none;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+
+    #service3,
+    #service2,
+    #service1 {
+      height: 500px;
+      /* Set a fixed height */
+      overflow-y: auto;
+      /* Enable vertical scrolling */
+    }
+
+    #service3 img,
+    #service2 img {
+      width: 70%;
+      margin-top: 0px;
+      border: 1px solid #181818;
+    }
+
+    .service.active {
+      display: block;
+    }
+
+    .author {
+      margin-top: 20px;
+      font-weight: bold;
+      color: #dd5f0a;
+    }
+
+    .company {
+      font-style: italic;
+      color: #bbb;
+    }
+
+    .dots {
+      margin-top: 25px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .dot {
+      height: 15px;
+      width: 15px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      margin: 0 7px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .dot.active {
+      background-color: #dd5f0a;
+    }
+
+    .arrow {
+      font-size: 20px;
+      margin: 0 20px;
+      cursor: pointer;
+      color: #dd5f0a;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      .service-container {
+        padding: 20px;
+      }
+
+      .dot {
+        height: 12px;
+        width: 12px;
+        margin: 0 5px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <section id="service">
+    <div class="container" data-aos="fade-up">
+      <div class="row">
+        <div class="col-md-12">
+          <h3 class="section-title">Our Service</h3>
+          <div class="section-title-divider"></div>
+          <p class="section-description">Check out our latest Project</p>
+          <div class="row justify-content-center">
+            <div class="col-md-10">
+              <div class="service-container">
+                <div class="service active" id="service1">
+                  <p>
+                    We offer a high-quality service to our customers all around the world. Our personal assistance is
+                    available 24/7.
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores quidem impedit iure
+                    reprehenderit vitae consequatur commodi dolorum esse ad quasi!
+                  </p>
+                  <!-- <div class="author">JAMES E. RILEY</div> -->
+                  <div class="company">Riley Dredge Consulting</div>
+                </div>
+
+                <div class="service" id="service2">
+                  <p>
+                    We offer a high-quality service to our customers all around the world. Our personal assistance is
+                    available 24/7.
+                  </p>
+                  <div class="author">JAMES E. RILEY</div>
+                  <div class="company">Riley Dredge Consulting</div>
+                </div>
+
+                <div class="service" id="service3">
+                  <div class="row">
+                    <div class="col-md-5">
+                      <h2> Services</h2>
+                      <p>We offer a high-quality service to our customers all around the world. Our personal assistance
+                        is
+                        available 24/7</p>
+                      <h3> Groundwater-barrier</h3>
+                    </div>
+
+                    <div class="col-md-5">
+                      <img src="../assets/img/Groundwater-barrier.jpg" alt="">
+
+                      <p>A groundwater barrier is a structure or material used to block, control, or manage the movement
+                        of groundwater, typically to prevent the flow of contaminated water or to redirect the natural
+                        flow for environmental or construction purposes. Groundwater barriers are crucial in various
+                        engineering and environmental contexts, including contamination control, flood management, and
+                        construction site dewatering.</p>
+
+                      <ul>Applications of Groundwater Barriers:
+                        <li>Environmental Protection: To contain or remediate contaminated groundwater near landfills,
+                          industrial sites, or waste disposal areas.</li>
+                        <li>Construction Dewatering: Barriers are used to keep groundwater from flooding excavation
+                          sites,
+                          ensuring dry conditions for construction work.</li>
+                        <li>Water Resource Management: To control or divert groundwater flow for agricultural or urban
+                          water
+                          supplies.</li>
+                        <li>Flood Control: To prevent rising groundwater levels from damaging infrastructure in
+                          flood-prone
+                          areas.</li>
+                      </ul>
+
+                      <!-- =========chat gpt points =========== -->
+                      For the Services Section in Hydraulic Dredging, here are key points you can include:
+
+                      1. Site Assessment and Planning:
+                      Detailed Surveys: Conduct Bathymetry and hydrographic surveys to understand the underwater
+                      terrain.
+                      Sediment Analysis: Analyze the composition of dredged material to determine appropriate disposal
+                      or reuse methods.
+                      Environmental Impact Assessments: Ensure compliance with environmental regulations and minimize
+                      ecological disruption.
+                      2. Dredging Operations:
+                      Hydraulic Dredging Execution: Efficient removal of sediment using hydraulic suction to clear
+                      waterways, harbors, or ponds.
+                      Specialized Equipment: Use of advanced hydraulic dredges like cutter suction dredgers or hopper
+                      dredgers for precision work.
+                      Real-time Monitoring: Ensure continuous monitoring of dredging progress to meet project goals and
+                      timelines.
+                      3. Material Transport and Disposal:
+                      Pipelines and Barges: Transport dredged materials via floating pipelines or barges to designated
+                      disposal sites.
+                      Eco-friendly Disposal: Employ safe disposal methods, including contained disposal facilities or
+                      beneficial reuse projects such as wetland restoration.
+                      4. Restoration and Maintenance:
+                      Waterway Maintenance: Regular dredging to maintain navigable depths in ports, marinas, and
+                      channels.
+                      Erosion Control: Help mitigate erosion along shorelines by depositing dredged material in
+                      strategic locations.
+                      Shoreline and Beach Replenishment: Use dredged material to restore beaches, preventing coastal
+                      erosion.
+                      5. Emergency Dredging Services:
+                      Rapid Response: Immediate dredging solutions for post-storm recovery, flood management, or to
+                      clear blocked waterways.
+                      Flood Mitigation: Prevent inland flooding by deepening channels or managing sediment build-up in
+                      rivers and lakes.
+                      6. Environmental Dredging:
+                      Contaminated Sediment Removal: Safely remove contaminated sediments from water bodies while
+                      preventing the spread of toxins.
+                      Aquatic Habitat Restoration: Rehabilitate ecosystems by dredging to restore water depth and flow
+                      conditions ideal for aquatic life.
+                      7. Client-Centric Solutions:
+                      Customized Dredging Plans: Tailor dredging strategies to meet the unique needs of each client,
+                      whether for industrial, commercial, or environmental purposes.
+                      24/7 Support and Monitoring: Provide real-time updates and around-the-clock service during
+                      dredging projects.
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Dots and arrows for navigation between services -->
+              <div class="dots">
+                <i class="fas fa-arrow-left arrow" onclick="prevService()"></i>
+                <span class="dot active" onclick="showService(1)" aria-label="Show Service 1"></span>
+                <span class="dot" onclick="showService(2)" aria-label="Show Service 2"></span>
+                <span class="dot" onclick="showService(3)" aria-label="Show Service 3"></span>
+                <i class="fas fa-arrow-right arrow" onclick="nextService()"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Include jQuery and Bootstrap JS (Optional, if Bootstrap JS components are used) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-LtrjvnR4geLepbGNSIlbz50d8u5s86DXK6d3Xx50aGkUOWg0kKn3E4jqXl78FhNk"
+    crossorigin="anonymous"></script>
+  <script>
+    let currentIndex = 1;
+    const totalServices = 3;
+
+    function showService(index) {
+      // Hide all services
+      const services = document.querySelectorAll('.service');
+      services.forEach((service) => {
+        service.classList.remove('active');
+      });
+
+      // Remove active class from all dots
+      const dots = document.querySelectorAll('.dot');
+      dots.forEach((dot) => {
+        dot.classList.remove('active');
+      });
+
+      // Calculate the new index (looping back to the start if necessary)
+      currentIndex = index > totalServices ? 1 : index < 1 ? totalServices : index;
+
+      // Show the selected service and activate the corresponding dot
+      document.getElementById(`service${currentIndex}`).classList.add('active');
+      dots[currentIndex - 1].classList.add('active');
+    }
+
+    function nextService() {
+      currentIndex++;
+      showService(currentIndex);
+    }
+
+    function prevService() {
+      currentIndex--;
+      showService(currentIndex);
+    }
+
+    // Set an interval to automatically change services every 5 seconds
+    // setInterval(nextService, 5000);
+  </script>
+</body>
+</html>

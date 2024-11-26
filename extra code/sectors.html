@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expandable Sectors - Single Row</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .sector-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            overflow-x: auto;
+            padding-bottom: 10px;
+        }
+
+        .sector-card {
+            flex: 0 0 calc(25% - 20px); /* Adjust card width (4 cards per row) */
+            border: none;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            background: #fff;
+            padding: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            min-width: 250px; /* Ensures consistent size when scrolling */
+        }
+
+        .sector-card img {
+            width: 100px;
+            margin-bottom: 15px;
+        }
+
+        .sector-card h5 {
+            font-size: 1.25rem;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .sector-card p {
+            font-size: 0.9rem;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .sector-card .btn {
+            background-color: #28a745;
+            color: #fff;
+            border-radius: 20px;
+            padding: 8px 20px;
+            font-size: 0.9rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .sector-card .btn:hover {
+            background-color: #218838;
+        }
+
+        .sector-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .view-all-btn {
+            display: block;
+            margin: 30px auto;
+            background-color: #28a745;
+            color: #fff;
+            padding: 10px 30px;
+            font-size: 1rem;
+            border-radius: 25px;
+            text-align: center;
+            text-decoration: none;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+        }
+
+        .view-all-btn:hover {
+            background-color: #218838;
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container py-5">
+        <h2 class="text-center mb-4">Sectors We Serve</h2>
+
+        <!-- Cards Container -->
+        <div class="sector-container">
+            <!-- Always Visible Cards -->
+            <div class="sector-card">
+                <img src="https://via.placeholder.com/100" alt="Solar Power">
+                <h5>Solar Power</h5>
+                <p>Comprehensive drone-based solar panel inspection and monitoring services.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+            <div class="sector-card">
+                <img src="https://via.placeholder.com/100" alt="General Insurance">
+                <h5>General Insurance</h5>
+                <p>Data acquisition for claims inspection and risk engineering using drones.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+            <div class="sector-card">
+                <img src="https://via.placeholder.com/100" alt="Manufacturing Plant">
+                <h5>Manufacturing Plant</h5>
+                <p>Drone-based visual and thermal inspections for factories and industrial plants.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+            <div class="sector-card">
+                <img src="https://via.placeholder.com/100" alt="General Insurance">
+                <h5>General Insurance</h5>
+                <p>Data acquisition for claims inspection and risk engineering using drones.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+           
+
+            <!-- Initially Hidden Cards -->
+            <div class="sector-card hidden">
+                <img src="https://via.placeholder.com/100" alt="Construction">
+                <h5>Construction & Infrastructure</h5>
+                <p>Drone solutions for topography mapping, alignment fixing, and progress monitoring.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+            <div class="sector-card hidden">
+                <img src="https://via.placeholder.com/100" alt="Thermal Power">
+                <h5>Thermal Power</h5>
+                <p>Drone inspections of power plants, including boilers and turbines.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+            <div class="sector-card hidden">
+                <img src="https://via.placeholder.com/100" alt="Telecommunications">
+                <h5>Telecommunications</h5>
+                <p>Inspection and mapping of telecom towers using aerial technology.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+            <div class="sector-card hidden">
+                <img src="https://via.placeholder.com/100" alt="Construction">
+                <h5>Construction & Infrastructure</h5>
+                <p>Drone solutions for topography mapping, alignment fixing, and progress monitoring.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+        </div>
+
+        <!-- View All Button -->
+        <button class="view-all-btn">View All Sectors</button>
+    </div>
+
+    <script>
+        const viewAllBtn = document.querySelector('.view-all-btn');
+        const hiddenCards = document.querySelectorAll('.hidden');
+
+        viewAllBtn.addEventListener('click', () => {
+            hiddenCards.forEach(card => card.classList.toggle('hidden'));
+            viewAllBtn.textContent = hiddenCards[0].classList.contains('hidden') ? 'View All Sectors' : 'Show Less';
+        });
+    </script>
+</body>
+
+</html>

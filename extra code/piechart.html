@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <div class="mainbox">
+        <div class="Region">
+            <h1>REGION </h1>
+            <ul class="image-list">
+                <li><a href="#" onclick="displayImage(event, './image/about/palghar.jpg')">Palghar Region</a></li>
+                <li><a href="#" onclick="displayImage(event, './image/about/Raigadf.jpg')">Raigad Region</a></li>
+                <li><a href="#" onclick="displayImage(event, './image/about/Mumbai.jpg')"> Mumbai Region</a></li>
+                <li><a href="#" onclick="displayImage(event, './image/about/Thanef.jpg')"> Thane Region</a></li>
+                <li><a href="#" onclick="displayImage(event, './image/about/Ratnagiriff.jpg')">Ratnagiri Region</a></li>
+                <li><a href="#" onclick="displayImage(event, './image/about/Sindhudurg.jpg')">Sindhudurg Region</a></li>
+            </ul>
+        </div>
+        <div class="map-img">
+            <img alt="" id="displayedImage" src="./image/about/img3.png">
+            <button id="A1" onclick="displayImage(event,'./image/about/img3.png')">State</button>
+            <button id="A2" onclick="displayImage(event,'./image/about/costal.png')">Region</button>
+            <button id="A3" onclick="displayImage(event,'./image/about/img1.jpg')">Circle</button>
+            <button id="A4" onclick="displayImage(event,'./image/about/img3.png')">Back</button>
+        </div>
+    </div> -->
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+    <div class="project-brief">
+
+        <div id="brief-content">
+            <!-- <div class="img"> -->
+            <!-- pie chart -->
+            <!-- <img src="./image/about/barchart.jpg" alt="" id="barchart"> -->
+            <div id="myChart">
+
+                <script>
+                    google.charts.load('current', { 'packages': ['corechart'] });
+                    google.charts.setOnLoadCallback(drawChart);
+
+                    function drawChart() {
+                        const data = google.visualization.arrayToDataTable([
+                            ['DISTRICT', 'Mhl'],
+                            ['PORT AND HARBOURS', 1],
+                            ['INLAND WATERWAYS', 2],
+                            ['MARITIME BOARDS', 3],
+                            ['CAPTIVE JETTIES', 4],
+                            ['SHIPYARDS', 5],
+                            ['OIL AND GAS', 6],
+                            ['COASTAL PROTECTION', 7],
+                            ['RECREATION WATER BODIES', 8],
+                            ['AGRICULTURE', 9],
+                        ]);
+
+                        const windowWidth = window.innerWidth;
+
+                        let chartWidth = '100%';
+                        let chartHeight = 550;
+
+                        // Adjust size based on window width
+                        // if (windowWidth <= 200) {
+                        //     chartWidth = windowWidth - 20; 
+                        //     chartHeight = 100; 
+                        // } else if (windowWidth <= 300) {
+                        //     chartWidth = 300;
+                        //     chartHeight = 200;
+                        // } else if (windowWidth <= 480) {
+                        //     chartWidth = '100%';
+                        //     chartHeight = 250;
+                        // } else if (windowWidth <= 767) {
+                        //     chartWidth = '100%'; 
+                        //     chartHeight = 300;
+                        // }
+
+                        const options = {
+                            title: 'DREGING REQUIRES AREAS',
+                            is3D: true,
+                            width: chartWidth,
+                            height: chartHeight
+                        };
+
+                        const chart = new google.visualization.PieChart(document.getElementById('myChart'));
+                        chart.draw(data, options);
+                    }
+
+                    // Redraw chart on window resize
+                    window.onresize = drawChart;
+
+                    // Initial chart draw
+                    google.charts.setOnLoadCallback(drawChart);
+
+                </script>
+            </div>
+</body>
+
+</html>

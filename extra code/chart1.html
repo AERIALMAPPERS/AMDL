@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- <title>Infrastructure Distribution</title> -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        /* Optional: Center the canvas */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f5f5f5;
+        }
+        canvas {
+            max-width: 500px;
+            max-height: 500px;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="myPieChart" width="500" height="500"></canvas>
+
+    <script>
+        const ctx = document.getElementById('myPieChart').getContext('2d');
+        const data = {
+            labels: [
+                '1:Port And Harbours', 
+                '2:Inland Waterways', 
+                '3:Maritime Boards', 
+                '4:Captive Jetties',
+                '5:Shipyards', 
+                '6:Oil And Gas', 
+                '7:Coastal Protection', 
+                '8:Recreation Water Bodies',
+                '9:Agriculture'
+            ],
+            datasets: [{
+                data: [10, 10, 10, 10, 10, 10, 10, 10, 10], // Example data points
+                backgroundColor: [
+                    '#b1121f', // Port And Harbours
+                    '#007bff', // Inland Waterways
+                    '#ff6f61', // Maritime Boards
+                    '#AA6384', // Captive Jetties
+                    '#8A2BE2', // Shipyards
+                    '#045311', // Oil And Gas
+                    '#f08306', // Coastal Protection
+                    '#FFD700', // Recreation Water Bodies
+                    'rgb(2, 150, 2)'  // Agriculture
+                ],
+                hoverOffset: 4
+            }]
+        };
+
+        const config = {
+            type: 'pie',
+            data: data,
+            options: {
+                responsive: true,
+                plugins: {
+                    title: {
+                        display: true,
+                        text: 'DREDGING REQUIRED AREAS'
+                    },
+                    legend: {
+                        position: 'right',
+                        labels: {
+                            boxWidth: 20,
+                            padding: 15
+                        }
+                    },
+                    tooltip: {
+                        callbacks: {
+                            label: function(context) {
+                                let label = context.label || '';
+                                if (label) {
+                                    label += ': ';
+                                }
+                                if (context.parsed !== null) {
+                                    label += '' + '';
+                                }
+                                return label;
+                            }
+                        }
+                    }
+                }
+            },
+        };
+
+        const myPieChart = new Chart(ctx, config);
+    </script>
+</body>
+</html>

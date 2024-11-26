@@ -1,0 +1,141 @@
+#equipment {
+  background: #fff;
+  padding: 80px 0 60px 0;
+}
+#equipmentButton button {
+  padding: 10px 15px;
+  margin: 5px;
+  border: none;
+  /* margin-left: 70px; */
+  /* background-color: #f57b17; */
+  color: #000000;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+#equipmentButton .button {
+  /* padding: 10px 15px; */
+  margin: 5px;
+  border: none;
+  /* margin-left: 70px; */
+  display: flex;
+  /* justify-content: center;
+   */
+   justify-content: center;
+  align-items: center;
+  /* background-color: #c9a98e; */
+  /* color: #000000; */
+  /* cursor: pointer; */
+  /* border-radius: 5px; */
+  /* transition: background-color 0.3s; */
+}
+
+
+#equipmentButton button:hover {
+  background-color: #363636;
+  color: #f0860e;
+}
+#equipmentType {
+  display: flex;
+  flex-wrap: wrap;
+  /* gap: 5px; */
+  margin-top: 20px;
+}
+#equipmentDetail{
+     display: none;
+}
+.box {
+  background-color: #ffffff;
+  /* border: 2px solid #000; */
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  /* display: none; */
+}
+
+.box img {
+  max-width: 100%;
+  height: auto;
+  /* margin-bottom: 10px; */
+}
+
+.box h4 {
+  margin-top: 10px;
+  font-weight: bold;
+  /* font-size: 1.2em; */
+}
+
+.box span {
+  display: block;
+  /* margin-left: 55px; */
+  /* width: 70%; */
+  margin-top: 10px;
+  color: #333;
+}
+
+#equipmentDetail h3{
+  color: #f0860e;
+  /* font-size: larger; */
+  font-weight: bold;
+  text-align-last: left;
+  text-decoration: underline grey;
+  text-underline-offset: 5px;
+}
+#equipmentDetail p{
+  text-align: justify;
+}
+
+/* @media (max-width: 1000px) {
+  #equipmentButton button {
+    padding: 1px 2px;
+    margin-left: 10px;
+  } */
+
+@media (max-width: 860px) {
+  #equipmentButton .button {
+    display:inline-block
+  }
+}
+
+
+.service-container {
+  background-color: #999797;
+  padding: 30px;
+  border-radius: 10px;
+  width: 600px;
+  text-align: center;
+}
+.service-container h2 {
+  margin-bottom: 10px;
+}
+.service {
+  display: none;
+  font-size: 16px;
+  line-height: 1.6;
+}
+.service.active {
+  display: block;
+}
+.author {
+  margin-top: 20px;
+  font-weight: bold;
+}
+.company {
+  font-style: italic;
+}
+.dots {
+  margin-top: 15px;
+}
+.dot {
+  height: 10px;
+  width: 10px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 5px;
+  cursor: pointer;
+}
+.dot.active {
+  background-color: #dd5f0a;
+}

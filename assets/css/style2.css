@@ -1,0 +1,270 @@
+/* sectors type Section--------------------------------*/
+
+canvas {
+  max-width: 400px;
+  max-height: 400px;
+}
+#sectors{
+   /* background: #fffaed; */
+   background: #f3f9f1;
+     /* background: #f7f7f7; */
+   /* background-color: #fff; */
+}
+#sector2, #sector4, #sector6, #sector8, #sector10, #sector12, #sector14, #sector16, #sector16 {
+  background-color: #fff;
+  /* background: #f3f9f1; */
+  padding: 40px 0 80px 0;
+  
+}
+#sector2 div, #sector4 div, #sector6 div, #sector8 div{
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
+}
+#sectors h6{
+  text-decoration: underline;
+  font-weight: bold;
+}
+ h5{
+  color:#074727;
+  font-weight: bold;
+}
+#sector2, #sector4, #sector6, #sector8  .info {
+  color: #333333;
+  padding: 40px 0 80px 0;
+
+}
+#sector1, #sector3, #sector5, #sector7, #sector9, #sector11, #sector13, #sector15, #sector17 {
+  background: #f7f7f7;
+  /* background: #f3f9f1; */
+   /* background-color: #fff; */
+  padding: 40px 0 80px 0;
+}
+#sectors .btn {
+  /* background-color:#60f380; */
+  background-color: #0c8a6f; 
+  /* background-color: #0f1a77; */
+  color: #000000;
+  /* color: #fff; */
+  border-radius: 20px;
+margin-left: 40%;
+  width: 20%;
+  padding: 8px 20px; 
+  font-size: 0.9rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+#sectors .btn:hover {
+  /* background-color: #f0860e; */
+  background-color:#d7dfd9;
+  /* background-color:  #0f1a77; */
+}
+
+@-webkit-keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/*-------------------- sectors type Section end -----------------------*/
+
+/*  image slideshow Section
+--------------------------------*/
+#slider-container {
+  /* width: 100%; */
+  overflow: hidden;
+  position: relative;
+  /* max-width: 600px; */
+  margin: auto;
+}
+
+.slider {
+  display: flex;
+  /* height: 500px; */
+  animation: slide 10s infinite;
+}
+
+.slide {
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.slide img {
+  width: 100%;
+  height: auto;
+}
+
+@keyframes slide {
+  0% { transform: translateX(0); }
+  20% { transform: translateX(0); }
+  25% { transform: translateX(-100%); }
+  45% { transform: translateX(-100%); }
+  50% { transform: translateX(-200%); }
+  70% { transform: translateX(-200%); }
+  75% { transform: translateX(-300%); }
+  95% { transform: translateX(-300%); }
+  100% { transform: translateX(0); }
+}
+
+/*-------------------- vision & mission -----------------------*/
+#visionMission{
+  background: linear-gradient(rgba(41, 35, 35, 0.6), rgba(20, 18, 18, 0.6)), url(/assets/img/VissionMission/bg2.jpg) fixed center center;
+  /* background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/DustpanDredge.jfif) fixed center center; */
+    background-size: cover;
+    padding-top: 10px;
+    padding-right: 10px;
+    color: rgb(238, 231, 231);
+}
+#visionMission p{
+margin-top: 50px;
+} 
+#visionMission h2{
+  color: #f8f4f1;
+  margin-top: 50px;
+  /* font-size: larger; */
+  text-align: center;
+  font-weight: bold;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  /* text-decoration: underline  rgb(82, 236, 77); */
+  text-underline-offset: 10px;
+  } 
+.visionMission h3{
+  color: #000000;
+  /* font-size: larger; */
+  font-weight: bold;
+  /* color: #008080; */
+  text-decoration: underline  rgb(82, 236, 77);
+  text-underline-offset: 5px;
+}
+.visionMission p{
+  padding: 5px 2px 2px 2px;
+}
+.col-md-3 img{
+  width: 20%;
+  height: 20%;
+}
+ 
+/*-------------------- gallery-====================================----------------------*/
+#gallery{
+  background: #fff;
+  padding: 80px 0 60px 0;
+}
+#gallery .member {
+  text-align: center;
+  margin-bottom: 20px;
+}
+#gallery .member .pic {
+  margin-bottom: 15px;
+  overflow: hidden;
+  /* height: 260px; */
+}
+#gallery .member .pic img {
+  max-width: 100%;
+}
+#gallery .member h4 {
+  font-weight: 700;
+  margin-bottom: 2px;
+}
+#gallery .member span {
+  font-style: italic;
+  display: block;
+  font-size: 13px;
+}
+#gallery .member .social {
+  margin-top: 15px;
+}
+#gallery .member .social a {
+  color: #b3b3b3;
+}
+#gallery .member .social a:hover {
+  color: #f0860e;
+}
+#gallery .member .social i {
+  font-size: 18px;
+  margin: 0 2px;
+}
+/* ===============================detail.html========================= */
+/* =======================Team Section========--------*/
+#team {
+  /* background: #fff; */
+  /* background: #f7f7f7; */
+  background: #f3f9f1;
+  padding: 80px 0 60px 0;
+}
+#team .member {
+  text-align: center;
+  margin-bottom: 20px;
+}
+#team .member .pic {
+  margin-bottom: 15px;
+  overflow: hidden;
+  /* height: 260px; */
+}
+#team .member .pic img {
+  max-width: 100%;
+}
+#team .member h4 {
+  font-weight: 700;
+  margin-bottom: 2px;
+}
+#team .member span {
+  font-style: italic;
+  display: block;
+  font-size: 13px;
+}
+#team .member .social {
+  margin-top: 15px;
+}
+#team .member .social a {
+  color: #b3b3b3;
+}
+#team .member .social a:hover {
+  color: #f0860e;
+}
+#team .member .social i {
+  font-size: 18px;
+  margin: 0 2px;
+}
+/* =======================Team Section========--------*/
+
+/* =======================values Section========--------*/
+#values{
+  /* background: #f7f7f7; */
+  background: #f3f9f1;
+  padding: 80px 0 60px 0;
+}
+.valueBox{
+  background-color: #fff;
+}
+#values img{
+  max-width: 100%;
+}
+#values .col-md-3{
+display: block;
+align-items: center;
+justify-content: center;
+padding: 30px;
+text-align: center;
+box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
+box-sizing: border-box;
+}
+
+ span{
+  text-align: center;
+  padding: 10px;
+  font-weight: bold;
+}
+#values p{
+  text-align: center;
+  /* text-justify: initial; */
+}
+/* =======================values Section========--------*/
