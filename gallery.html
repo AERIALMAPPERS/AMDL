@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Torando Dredging</title>
+  <title>AMDL</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -25,8 +25,9 @@
   <meta name="twitter:image" content="">
 
   <!-- Favicons -->
-  <link href="assets/img/logo.jfif " rel="icon">
+  <link href="./assets/img/company logo.png " rel="icon">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
   <!-- <link href="assets/img/ " rel="apple-touch-icon"> -->
 
   <!-- Google Fonts -->
@@ -45,12 +46,13 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="assets/css/css2.css" rel="stylesheet"><!--CSS2-->
-
   <link href="assets/css/css3.css" rel="stylesheet"><!--CSS#-->
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style1.css">
+  <link rel="stylesheet" href="./assets/css/gallery.css">
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" /> -->
   <!-- <link rel="stylesheet" href="./assets/css/style2.css"> -->
 
   <!-- =======================================================
@@ -65,11 +67,11 @@
   <!-- ======= Header ======= -->
   <header id="header" class="d-flex align-items-center">
     <div class="container d-flex align-items-center justify-content-between">
-      <img src="./assets/img/excavator (1).png" style="width: 60px ;border-radius: 50%;">
+      <img src="./assets/img/company logo.png" style="width: 80px ;border-radius: 1%; background : linear-gradient(rgba(122, 118, 118, 0.6),rgba(255, 255, 255, 0.979)); ">
       <h1
         style="font-size:15px; color: whitesmoke; font-weight: 80; margin-top: 20px;margin-right: 10px; padding: 5px;">
       </h1>
-      
+
       <!--======= .navbar======= -->
       <nav id="navbar" class="navbar">
         <ul>
@@ -123,74 +125,76 @@
   <main id="main">
 
     <!-- ======= Gallery Section ======= -->
-    <section id="gallery">
+    <section id="gallery"> <br><br>
       <div class="container" data-aos="fade-up">
         <div class="section-header">
           <h3 class="section-title"> Photos</h3>
           <div class="section-title-divider"></div>
         </div>
-        <div class="row">
+        <div class="gallery">
+          <!-- Festival Section -->
+          <div class="gallery-section">
+            <h2>Festival</h2>
+            <div class="image-grid">
+              <img src="./assets/img/Gallery/Festival1.jpeg" alt="Festival Image 1">
+              <img src="./assets/img/Gallery/Festival2.jpeg" alt="Festival Image 2">
+              <img src="./assets/img/Gallery/Ganpati (MamPic).jpeg" alt="Festival Image 1">
+              <img src="./assets/img/Gallery/Festival4.jpeg" alt="Festival Image 2">
+              <!-- <img src="./assets/img/Gallery/Festival5.jpeg" alt="Festival Image 1"> -->
+              <!-- <img src="./assets/img/Gallery/Ganesha.jpeg" alt="Festival Image 2"> -->
+            </div>
+            <button class="view-button" onclick="openModal('Festival')">View</button>
+          </div>
 
-          <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="100000">
-            <div class="mem">
-              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8N3VldQ_Syf2sj6LKG_DDdbYQtKl-hzyrfA&s"
-                class="img-fluid n-img b" alt="">
+          <!-- Labs Section -->
+          <div class="gallery-section">
+            <h2>Labs</h2>
+            <div class="image-grid">
+              <img src="./assets/img/Gallery/Lab1.jpeg" alt="Labs Image 1">
+              <img src="./assets/img/Gallery/Lab2.jpeg" alt="Labs Image 2">
+              <img src="./assets/img/Gallery/Lab3.jpeg" alt="Labs Image 1">
+              <img src="./assets/img/Gallery/Lab2.jpeg" alt="Labs Image 2">
             </div>
+            <button class="view-button" onclick="openModal('Labs')">View</button>
           </div>
-          <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="100000">
-            <div class="mem">
-              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHr1N_xfloj2kcS68UgaMNwjJKwh4pAKCm3g&s"
-                class="img-fluid n-img b" alt="">
+
+          <!-- Survey Section -->
+          <div class="gallery-section">
+            <h2>Team</h2>
+            <div class="image-grid">
+              <img src="./assets/img/Gallery/Team1.jpeg" alt="Survey Image 1">
+              <img src="./assets/img/Gallery/Team2.jpeg" alt="Survey Image 2">
+              <img src="./assets/img/Gallery/Team3.jpeg" alt="Survey Image 1">
+              <img src="./assets/img/Gallery/Team4.jpeg" alt="Survey Image 2">
+              <img src="./assets/img/Gallery/Team5.jpeg" alt="Survey Image 1">
+              <img src="./assets/img/Gallery/Team6.jpeg" alt="Survey Image 2">
+              <!-- <img src="./assets/img/Gallery/Team1.jpeg" alt="Survey Image 1">
+              <img src="./assets/img/Gallery/Team2.jpeg" alt="Survey Image 2"> -->
             </div>
+            <button class="view-button" onclick="openModal('Survey')">View</button>
           </div>
-          <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="100000">
-            <div class="mem">
-              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjLlV_XV6R5pVMVBYsfyyOjXrukqkxSFMkig&s"
-                class="img-fluid n-img b" alt="">
+        </div>
+
+        <!-- Modal Structure -->
+        <div class="modal-overlay" id="modalOverlay">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h2 class="modal-title" id="modalTitle"></h2>
+              <button type="button" class="close-button" onclick="closeModal()">×</button>
             </div>
-          </div>
-          <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="100000">
-            <div class="mem">
-              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxwAPsue4neb4V_DtULSg_PixnuXq8CUdNwA&s"
-                class="img-fluid n-img b" alt="">
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="100000">
-            <div class="mem">
-              <img
-                src="https://images.all-free-download.com/images/graphiclarge/team_work_background_cute_pupils_icons_cartoon_characters_6835802.jpg"
-                class="img-fluid n-img b" alt="">
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="100000">
-            <div class="mem">
-              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTboZzxyiarm_jNToiX3Ve6KhGoxDSSV44DwA&s"
-                class="img-fluid n-img b" alt="">
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="100000">
-            <div class="mem">
-              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2kkqUzG8L3koNsQWSVZjgA2lDVmMhd8BuxA&s"
-                class="img-fluid n-img b" alt="">
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="100000">
-            <div class="mem">
-              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2d80A-TGBTuzWb_GCyPBhl3dJ7gWIwEQusA&s"
-                class="img-fluid n-img b" alt="">
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="100000">
-            <div class="mem">
-              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRO7VJs7xsCtt3es6jzOL_v4QEB5ZuBwjUK7A&s"
-                class="img-fluid n-img b" alt="">
+            <hr> <!-- Line separator between title and image -->
+            <img src="" alt="Modal Image" class="modal-image" id="modalImage">
+            <div class="modal-buttons">
+              <button class="modal-button" onclick="prevImage()">Previous</button>
+              <button class="modal-button" onclick="nextImage()">Next</button>
             </div>
           </div>
         </div>
       </div>
+      
     </section><!-- End Team Section -->
   </main><!-- End #main -->
-
+<br><br><br>
   <!-- ======= Footer ======= -->
   <footer id="footer">
     <div class="container">
@@ -220,10 +224,12 @@
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
 
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="./assets/js/gallery.js"></script>
 
 </body>
 
