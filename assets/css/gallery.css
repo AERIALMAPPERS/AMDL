@@ -52,6 +52,7 @@ body {
 .image-grid img {
     width: 100%;
     border-radius: 5px;
+    border: 1px solid rgb(0, 0, 0);
     transition: transform 0.3s ease;
 }
 
@@ -102,7 +103,8 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: relative;
+    text-align: center;
+    /* position: relative; */
 }
 
 .close-button {
@@ -117,15 +119,17 @@ body {
 }
 
 hr {
-    margin-top: 10px;
+    margin-top: 0px;
     border: 0;
     border-top: 1px solid #ddd;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 .modal-image {
-    max-width: 70%;
+    max-width: 50%;
     height: auto;
+    margin-left: 25%;
+    /* align-items: center; */
     border-radius: 5px;
 }
 

@@ -99,7 +99,7 @@
             <a class="nav-link scrollto" href="./index.html#blog">Blog <i class="fa fa-angle-down"></i></a>
             <ul class="dropdown-content">
               <li><a href="./event.html">Events</a></li>
-              <li><a href="./other.html">Other</a></li>
+              <!-- <li><a href="./other.html">Other</a></li> -->
 
             </ul>
           </li>
@@ -136,44 +136,59 @@
           <div class="gallery-section">
             <h2>Festival</h2>
             <div class="image-grid">
-              <img src="./assets/img/Gallery/Festival1.jpeg" alt="Festival Image 1">
-              <img src="./assets/img/Gallery/Festival2.jpeg" alt="Festival Image 2">
-              <img src="./assets/img/Gallery/Ganpati (MamPic).jpeg" alt="Festival Image 1">
-              <img src="./assets/img/Gallery/Festival4.jpeg" alt="Festival Image 2">
+              <img src="./assets/img/Gallery/festival/Festival-1.jpeg" alt="Festival Image 1">
+              <img src="./assets/img/Gallery/festival/Festival-2.jpeg" alt="Festival Image 2">
+              <img src="./assets/img/Gallery/festival/Festival-3.jpeg" alt="Festival Image 1">
+              <img src="./assets/img/Gallery/festival/Festival-4.jpeg" alt="Festival Image 2">
               <!-- <img src="./assets/img/Gallery/Festival5.jpeg" alt="Festival Image 1"> -->
-              <!-- <img src="./assets/img/Gallery/Ganesha.jpeg" alt="Festival Image 2"> -->
+              <!-- <img src="./assets/img/Gallery/festival/First.jpg" alt="Festival Image 2"> -->
             </div>
             <button class="view-button" onclick="openModal('Festival')">View</button>
           </div>
+          <!-- <img src="./assets/img/Gallery/festival/DasaraVideo.mp4" alt="Festival Image 2"> -->
 
           <!-- Labs Section -->
           <div class="gallery-section">
             <h2>Labs</h2>
             <div class="image-grid">
-              <img src="./assets/img/Gallery/Lab1.jpeg" alt="Labs Image 1">
-              <img src="./assets/img/Gallery/Lab2.jpeg" alt="Labs Image 2">
-              <img src="./assets/img/Gallery/Lab3.jpeg" alt="Labs Image 1">
-              <img src="./assets/img/Gallery/Lab2.jpeg" alt="Labs Image 2">
+              <img src="./assets/img/Gallery/labs/Lab-1.jpeg" alt="Labs Image 1">
+              <img src="./assets/img/Gallery/labs/Lab-2.jpeg" alt="Labs Image 2">
+              <img src="./assets/img/Gallery/labs/Lab2.jpeg" alt="Labs Image 1">
+              <img src="./assets/img/Gallery/labs/Lab4.jpeg" alt="Labs Image 2">
             </div>
             <button class="view-button" onclick="openModal('Labs')">View</button>
           </div>
+          <!-- <img src="./assets/img/Gallery/labs/Lab2.jpeg" alt=""> -->
 
           <!-- Survey Section -->
           <div class="gallery-section">
             <h2>Team</h2>
             <div class="image-grid">
-              <img src="./assets/img/Gallery/Team1.jpeg" alt="Survey Image 1">
-              <img src="./assets/img/Gallery/Team2.jpeg" alt="Survey Image 2">
-              <img src="./assets/img/Gallery/Team3.jpeg" alt="Survey Image 1">
-              <img src="./assets/img/Gallery/Team4.jpeg" alt="Survey Image 2">
-              <img src="./assets/img/Gallery/Team5.jpeg" alt="Survey Image 1">
-              <img src="./assets/img/Gallery/Team6.jpeg" alt="Survey Image 2">
+              <img src="./assets/img/Gallery/team/Team-1.jpeg" alt="Survey Image 1">
+              <img src="./assets/img/Gallery/team/Team-2.jpeg" alt="Survey Image 2">
+              <img src="./assets/img/Gallery/team/Team-3.jpeg" alt="Survey Image 1">
+              <img src="./assets/img/Gallery/team/Team-4.jpeg" alt="Survey Image 2">
+              <img src="./assets/img/Gallery/team/Team-5.jpeg" alt="Survey Image 1">
+              <img src="./assets/img/Gallery/team/Team-6.jpeg" alt="Survey Image 2">
               <!-- <img src="./assets/img/Gallery/Team1.jpeg" alt="Survey Image 1">
               <img src="./assets/img/Gallery/Team2.jpeg" alt="Survey Image 2"> -->
             </div>
-            <button class="view-button" onclick="openModal('Survey')">View</button>
+            <button class="view-button" onclick="openModal('Team')">View</button>
           </div>
+           <!-- Survey Section -->
+           <div class="gallery-section">
+            <h2>Site-Survey</h2>
+            <div class="image-grid">
+              <img src="./assets/img/Gallery/site/Site-1.png" alt="Survey Image 1">
+              <img src="./assets/img/Gallery/site/Site-2.png" alt="Survey Image 2">
+              <img src="./assets/img/Gallery/site/Site-3.jpg" alt="Survey Image 1">
+              <img src="./assets/img/Gallery/site/Site-4.png" alt="Survey Image 2">
+
+              <!-- <img src="./assets/img/Gallery/site/Site-13.jpeg" alt="Survey Image 2"> -->
+            </div>
+            <button class="view-button" onclick="openModal('Site')">View</button>
         </div>
+
 
         <!-- Modal Structure -->
         <div class="modal-overlay" id="modalOverlay">
@@ -190,11 +205,29 @@
             </div>
           </div>
         </div>
+        <br><br>
       </div>
+       <!-- Modal Structure -->
+       <div class="modal-overlay" id="modalOverlay">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title" id="modalTitle"></h2>
+            <button type="button" class="close-button" onclick="closeModal()">×</button>
+          </div>
+          <hr> <!-- Line separator between title and image -->
+          <img src="" alt="Modal Image" class="modal-image" id="modalImage">
+          <div class="modal-buttons">
+            <button class="modal-button" onclick="prevImage()">Previous</button>
+            <button class="modal-button" onclick="nextImage()">Next</button>
+          </div>
+        </div>
+      </div>
+      <br><br><br><br>
+    </div>
       
     </section><!-- End Team Section -->
   </main><!-- End #main -->
-<br><br><br>
+
   <!-- ======= Footer ======= -->
   <footer id="footer">
     <div class="container">
@@ -232,5 +265,4 @@
   <script src="./assets/js/gallery.js"></script>
 
 </body>
-
 </html>

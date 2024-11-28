@@ -116,12 +116,13 @@ h6 {
 }
 
 #hero .hero-container {
-  background: rgba(92, 92, 92, 0.8);
+  /* background: rgba(92, 92, 92, 0.8); */
   /* width: 100%; */
   /* height: 100vh; */
   /* background: url(../img/amdl/hero-bg.png) top center; */
   background: linear-gradient(rgba(255, 255, 255, 0.192), rgba(255, 255, 255, 0.185)), url("../img/amdl/VRUSHI.webp") fixed center center;
-  /* background: linear-gradient(rgba(3, 3, 3, 0.952), rgba(255, 255, 255, 0)), url("../img/amdl/HERO-BG1.jpg") fixed center center; */
+  /* background: linear-gradient(rgba(255, 255, 255, 0.192), rgba(255, 255, 255, 0.185)), url(/assets/img/bg/Background.jpg) fixed center center; */
+  /* background: linear-gradient(rgba(255, 255, 255, 0.192), rgba(255, 255, 255, 0.185)), url(".../assets/img/bg/Background.jpg") fixed center center; */
   display: table-cell;
   background-size: cover;
   margin: 0;
@@ -206,6 +207,10 @@ h6 {
   background: #0c8a6f;
   border: 2px solid #0c8a6f;
 }
+#hero video:hover{
+  pointer-events: none;
+}
+
 
 /*--------------------------------------------------------------
 # Header
@@ -451,7 +456,6 @@ h6 {
   line-height: 0;
   transition: 0.5s;
 }
-
 @media (max-width: 991px) {
   .mobile-nav-toggle {
     display: block;
@@ -460,6 +464,41 @@ h6 {
   .navbar ul {
     display: none;
   }
+  
+}
+
+
+@media (max-width: 500px) {
+  .mobile-nav-toggle {
+    display: block;
+  }
+
+  .navbar ul {
+    display: none;
+  }
+
+  .contact-info {
+    margin: 0;
+    padding: 0;
+    /* display: flex; */  display: block;
+    list-style: none;
+    align-items: center;
+  }
+  
+  .contact-info p {
+    /* margin: 10px 0; */
+    font-size: 8px;
+    display: flex;
+    color: #fff;
+    align-items: center;
+  }
+  
+  .contact-info i {
+    /* margin: 0 10px; */
+    color: #fff;
+    /* margin-right: 10px; */
+  }
+  
 }
 
 .navbar-mobile {
@@ -1122,7 +1161,7 @@ section {
 }
 
 #blogQuote {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/vission.jpg) fixed center center;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/assets/img/vission.jpg) fixed center center;
   background-size: cover;
   padding: 8px 0;
   height: 450px;
