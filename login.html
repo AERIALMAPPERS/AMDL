@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="./assets/css/login.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+</head>
+<body>
+    <main id="main">
+    <div class="login-container">
+        <div class="login-form">
+            <h1>Apply</h1>
+            <form id="my-form">
+                <div class="input-group">
+                    <label for="username">Username</label>
+                    <img src="./assets/img/CAREER/user icon.png" alt="User" class="lock-icon">
+                    <input type="text" id="name" name="name" placeholder="Enter your username" required>
+                </div>
+                <div class="input-group password-group">
+                    <label for="password">Email</label>
+                    <!-- Lock Icon for Password -->
+                    <img src="./assets/img/CAREER/email.png" alt="Lock" class="lock-icon">
+                    <!-- <i class="fas fa-envelope"></i> -->
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+                <div class="input-group password-group">
+                    <label for="password">Contact</label>
+                
+                    <img src="./assets/img/CAREER/phone.png" alt="Lock" class="lock-icon">
+                    <input type="text" id="contact" name="contact" placeholder="Enter your contact number" required>
+                    
+                </div> 
+                <!-- <div class="input-group password-group"> -->
+                    <!-- <label for="password">Message</label> -->
+                    <!-- <label for="password">message</label> -->
+                    <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+               
+                    <!-- <input type="text" id="message" name="message" placeholder="Enter the message if you instreted" required> -->
+                <!-- </div> -->
+
+                <div class="button-group">
+                    <button type="submit">submit</button>
+                </div>
+                <!-- <div class="links">
+                    <a href="#">Forgot Password?</a> | <a href="./signup.html">Sign-Up</a>
+                </div> -->
+            </form>
+        </div>
+        
+    </div>
+    <button class="btn" onclick="location.href='career.html'">Back </button>
+    </main>
+    <script>
+        // Ensure the script runs after the DOM is fully loaded
+        document.addEventListener("DOMContentLoaded", function () {
+            // Initialize EmailJS
+            emailjs.init("gsJfET_lF2k6-WVuF"); // Replace with your EmailJS public key
+
+            // Function to send the email
+            function sendMail(event) {
+                event.preventDefault(); // Prevent default form submission behavior
+
+                // Retrieve form values
+                let params = {
+                    name: document.getElementById("name").value,
+                    email: document.getElementById("email").value,
+                    contact: document.getElementById("contact").value,
+                    message : document.getElementById("message").value,
+                    reply_to: document.getElementById("email").value,
+                };
+
+                // Send email using EmailJS
+                emailjs.send("service_8lo5utf", "template_d062kob", params)
+                    .then(function (response) {
+                        console.log("Success:", response);
+                        alert("Your application has been sent successfully!");
+                    })
+                    .catch(function (error) {
+                        console.error("Error:", error);
+                        alert("Failed to send your application. Please try again.");
+                    });
+            }
+
+            // Add event listener to the form
+            document.getElementById("my-form").addEventListener("submit", sendMail);
+        });
+    </script>
+
+
+</body>
+</html>

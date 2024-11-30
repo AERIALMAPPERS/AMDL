@@ -29,10 +29,16 @@
    /* justify-items: right; */
    margin-left: 80%;
    margin-right: 20px;
-   margin-top: -20%;
+   margin-top: -10%;
    margin-bottom: 90px;
    /* border: 1px solid #ddd; */
    /* border-radius: 8px; */
+}
+.content-container  video::-internal-media-controls {
+  display: none;
+}
+.content-container  video::-webkit-media-controls {
+  display: none;
 }
 
 .form-container {
@@ -54,7 +60,7 @@ h1 {
   text-align: center;
   margin-bottom: 15px;
   font-family:'Courier New', Courier, monospace;
-  text-decoration: underline #0c8a6f;
+  text-decoration: underline rgb(57, 163, 89);
 
 }
 /* .h1 :hover {
@@ -83,7 +89,7 @@ button {
 }
 
 button {
-  background-color:  #0c8a6f;  
+  background-color:  rgb(57, 163, 89);  
   color: #fff;
   font-weight: bold;
   border: none;
@@ -97,7 +103,7 @@ button {
 
 
 button:hover {
-  background-color: #14f8c7;
+  background-color: rgb(57, 163, 89);
 }
 
 /* Style the star rating */
@@ -131,7 +137,8 @@ button:hover {
 #faq {
   margin: 20px;
   padding: 15px;
-  background: #f9f9f9;
+  /* background: #f9f9f9; */
+  background: #f3f9f1;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
@@ -148,7 +155,7 @@ button:hover {
 }
 
 .faq-question {
-  background-color: #0c8a6f;
+  background-color:rgb(57, 163, 89);
   color: rgb(0, 0, 0);
   font-size: 1rem;
   padding: 10px;
