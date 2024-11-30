@@ -1,7 +1,8 @@
 const imageSets = {
     Festival: ["./assets/img/Gallery/festival/Ganesha.jpeg",
         "./assets/img/Gallery/festival/First.jpg",
-        "./assets/img/Gallery/festival/Festival-2.jpeg", "./assets/img/Gallery/festival/Festival-1.jpeg",
+        "./assets/img/Gallery/festival/Festival-2.jpeg", 
+         "./assets/img/Gallery/festival/RepublicDay.jpeg", "./assets/img/Gallery/festival/Festival-1.jpeg",
         "./assets/img/Gallery/festival/Festival-3.1.jpeg", "./assets/img/Gallery/festival/Festival-5.jpeg",
         "./assets/img/Gallery/festival/Festival-6.jpeg", "./assets/img/Gallery/festival/Festival-4.1.jpeg",
         "./assets/img/Gallery/festival/Festival-7.jpeg", "./assets/img/Gallery/festival/Festival-10.jpeg",
