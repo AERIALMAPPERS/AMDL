@@ -514,7 +514,6 @@ h6 {
   
 }
 
-
 @media (max-width: 500px) {
   .mobile-nav-toggle {
     display: block;
@@ -1282,7 +1281,7 @@ section {
 }
 
 .carousel-item img {
-  width: 120px;
+  width: 50%;
   /* Set consistent width for logos */
   height: auto;
   /* Maintain aspect ratio */
@@ -1328,6 +1327,15 @@ section {
   margin-top: 30px;
   /* Create space above the buttons */
 }
+
+
+@media (max-width: 500px) {
+  .carousel-item img {
+    width: 100%;
+   
+  }
+}
+
 
 /* <!-- =====================================  END OUR CLIENT ========================================= --> */
 
