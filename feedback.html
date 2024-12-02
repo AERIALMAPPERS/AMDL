@@ -63,6 +63,11 @@
     <link rel="stylesheet" href="./assets/css/style1.css">
     <link rel="stylesheet" href="./assets/css/style2.css">
 
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+  </script>
+
     <!-- =======================================================
   * Template Name: Imperial - v5.7.0
   * Template URL: https://bootstrapmade.com/imperial-free-onepage-bootstrap-theme/
@@ -139,51 +144,52 @@
                 <img src="./assets/img/Feedback/fd1.jpg" alt="Feedback Image" >
         
                 <!-- Right Side Video -->
-                <video width="50%" autoplay loop muted playsinline style="background: transparent;">
+                <video width="20%" autoplay loop muted playsinline style="background: transparent;">
                   <source src="./assets/img/AMDL-LOGO_FINAL.webm" type="video/mp4">
                 </video>
             </div>
-        <div class="form-container">
-            <h1> Feedback Form</h1>
-            <form>
-              <div class="input-group">
-                <label> Name:</label>
-                <div class="name-fields">
-                  <input type="text" placeholder="First Name" required>
-                  <input type="text" placeholder="Last Name" required>
+            <div class="form-container">
+              <h1> Feedback Form</h1>
+              <form id="my-form">
+                <div class="input-group">
+                  <label> Name:</label>
+                  <!-- <div class="name-fields"> -->
+                    <input type="text" id="name" name="name" placeholder="Enter your Name" required>
+                    <!-- <input type="text" id="first name" name="first name" placeholder="First Name" required> -->
+                    <!-- <input type="text" id="last name" name="last name" placeholder="Last Name" required> -->
+                  <!-- </div> -->
                 </div>
-              </div>
-        
-              <div class="input-group">
-                <label>Email-ID:</label>
-                <input type="text" placeholder="examle@gmail.com" required>
-              </div>
-        
-              <div class="input-group">
-                <label>Date:</label>
-                <input type="date" required>
-              </div>
-              <div class="input-group">
-                <label>Services Rating:</label>
-              <div class="stars">
-                <span data-value="1">★</span>
-                <span data-value="2">★</span>
-                <span data-value="3">★</span>
-                <span data-value="4">★</span>
-                <span data-value="5">★</span>
-              </div>
-              <!-- <p id="rating-display">Selected Rating: None</p> -->
-        
-              <div class="input-group">
-                <label>Comments and feedback:</label>
-                <textarea placeholder="Write your comments here..." rows="4"></textarea>
-              </div>
-        
-              <button type="submit">Submit</button>
-            </form>
-        </div>
-
-
+          
+                <div class="input-group">
+                  <label>Email-ID:</label>
+                  <input type="text" id="email" name="email"placeholder="examle@gmail.com" required>
+                </div>
+          
+                <div class="input-group">
+                  <label>Date:</label>
+                  <input type="date" id="date" name="date" required>
+                </div>
+                <div class="input-group">
+                  <label>Services Rating:</label>
+                <div class="stars" id="rate " name="rate">
+                  <!-- <select id="rate" name="rate" required> -->
+                  <span data-value="1">★</span>
+                  <span data-value="2">★</span>
+                  <span data-value="3">★</span>
+                  <span data-value="4">★</span>
+                  <span data-value="5">★</span>
+                </div>
+                <!-- <p id="rating-display">Selected Rating: None</p> -->
+          
+                <div class="input-group">
+                  <label>Comments and feedback:</label>
+                  <textarea id="comments" name="comments" placeholder="Write your comments here..." rows="4"></textarea>
+               
+                </div>
+          
+                <button type="submit">Submit</button>
+              </form>
+          </div>
     </main><!-- End #main -->
 <!-- ////////////////////////FAQ start/////////////////////////////////////// -->
 <section id="faq">
@@ -254,78 +260,77 @@
 
                   <!-- Carousel Items -->
                   <div class="carousel-inner">
-                     <!-- Slide 1 -->
-                     <div class="carousel-item active">
-                      <div class="container">
-                          <div class="row">
-                              <div class="col-2"><img src="./assets/img/Clients/AIRPORT.png"alt="Airport Authority"></div>
-                              <div class="col-2"><img src="./assets/img/Clients/ashoka-buildcon.png" alt="Ashoka Buildcon"></div>
-                              <div class="col-2"><img src="./assets/img/Clients/ashoka-buildcon1.png"  alt="CIDCO"></div>
-                              <div class="col-2"><img src="./assets/img/Clients/CIDCO.jpg" alt="Indian Railways"></div>
-                              <div class="col-2"><img src="./assets/img/Clients/INDIAN RAILWAY.png" alt="Kochi Metro"></div>    
-                              <div class="col-2"><img src="./assets/img/Clients/KOCHI.png" alt="NTPC"> </div> 
+                      <!-- Slide 1 -->
+                      <div class="carousel-item active">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-2"><img src="./assets/img/Clients/AIRPORT.png"alt="Airport Authority"></div>
+                                <div class="col-2"><img src="./assets/img/Clients/ashoka-buildcon.png" alt="Ashoka Buildcon"></div>
+                                <div class="col-2"><img src="./assets/img/Clients/ashoka-buildcon1.png"  alt="CIDCO"></div>
+                                <div class="col-2"><img src="./assets/img/Clients/CIDCO.jpg" alt="Indian Railways"></div>
+                                <div class="col-2"><img src="./assets/img/Clients/INDIAN RAILWAY.png" alt="Kochi Metro"></div>    
+                                <div class="col-2"><img src="./assets/img/Clients/KOCHI.png" alt="NTPC"> </div> 
 
-                          </div>
-                          <div class="row">
-                               
-                              <div class="col-2"><img src="./assets/img/Clients/KRDCL.jfif" alt="NHPC"></div>        
-                              <div class="col-2"><img src="./assets/img/Clients/L AND T.jpg"  alt="MORTH"></div>
-                              <div class="col-2"><img src="./assets/img/Clients/PUNE METRO.png"alt="Indian Railways"></div>          
-                              <div class="col-2"><img src="./assets/img/Clients/PUNE MNP.webp" alt="Indian Railways"></div>       
-                              <div class="col-2"><img src="./assets/img/Clients/PWD.jpeg" alt="Indian Railways"></div>     
-                              <div class="col-2"><img src="./assets/img/Clients/RAILWAY.png"alt="Ashoka Buildcon"></div>    
-                          </div>
-                          <!-- <div class="row">
-                              
-                          </div> -->
-                      </div>
-                  </div>
+                            </div>
+                            <div class="row">
+                                 
+                                <div class="col-2"><img src="./assets/img/Clients/KRDCL.jfif" alt="NHPC"></div>        
+                                <div class="col-2"><img src="./assets/img/Clients/L AND T.jpg"  alt="MORTH"></div>
+                                <div class="col-2"><img src="./assets/img/Clients/PUNE METRO.png"alt="Indian Railways"></div>          
+                                <div class="col-2"><img src="./assets/img/Clients/PUNE MNP.webp" alt="Indian Railways"></div>       
+                                <div class="col-2"><img src="./assets/img/Clients/PWD.jpeg" alt="Indian Railways"></div>     
+                                <div class="col-2"><img src="./assets/img/Clients/RAILWAY.png"alt="Ashoka Buildcon"></div>    
+                            </div>
+                            <!-- <div class="row">
+                                
+                            </div> -->
+                        </div>
+                    </div>
 
-                  <!-- Slide 2 -->
-                  <div class="carousel-item">
-                      <div class="container">
-                          <div class="row">
-                              <div class="col-2"><img src="./assets/img/Clients/L&T.png" alt="MMB"> </div>
-                              <div class="col-2"><img src="./assets/img/Clients/MH-FISH.jpg"alt="L&T"></div>         
-                              <div class="col-2"><img src="./assets/img/Clients/MH-JV.jpg" alt="MH2"> </div>
-                              <div class="col-2"><img src="./assets/img/Clients/MH.webp" alt="MH-JV"></div>
-                              <div class="col-2"><img src="./assets/img/Clients/MH2.jpeg"alt="MH Fishery"></div>       
-                              <div class="col-2"><img src="./assets/img/Clients/MINISTRY OF MINE.png"alt="KRDCL"></div> 
-                              
-                          </div>
-                          <div class="row">
-                              <div class="col-2"><img src="./assets/img/Clients/MMRDA.png"alt="CIDCO"></div>        
-                              <div class="col-2"><img src="./assets/img/Clients/MORTH.png"  alt="Indian Railways"></div>    
-                              <div class="col-2"><img src="./assets/img/Clients/MSRDC.jpeg" alt="Kochi Metro"></div>   
-                              <div class="col-2"><img src="./assets/img/Clients/nabard.jpg"alt="NTPC"></div>      
-                              <div class="col-2"><img src="./assets/img/Clients/MMB.png" alt="Airport Authority"></div>        
-                              <div class="col-2"><img src="./assets/img/Clients/MMM.jfif" alt="Ashoka Buildcon"></div>
-                                     
-                          </div>
-                      </div>
-                  </div>
+                    <!-- Slide 2 -->
+                    <div class="carousel-item">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-2"><img src="./assets/img/Clients/L&T.png" alt="MMB"> </div>
+                                <div class="col-2"><img src="./assets/img/Clients/MH-FISH.jpg"alt="L&T"></div>         
+                                <div class="col-2"><img src="./assets/img/Clients/MH-JV.jpg" alt="MH2"> </div>
+                                <div class="col-2"><img src="./assets/img/Clients/MH.webp" alt="MH-JV"></div>
+                                <div class="col-2"><img src="./assets/img/Clients/MH2.jpeg"alt="MH Fishery"></div>       
+                                <div class="col-2"><img src="./assets/img/Clients/MINISTRY OF MINE.png"alt="KRDCL"></div> 
+                                
+                            </div>
+                            <div class="row">
+                                <div class="col-2"><img src="./assets/img/Clients/MMRDA.png"alt="CIDCO"></div>        
+                                <div class="col-2"><img src="./assets/img/Clients/MORTH.png"  alt="Indian Railways"></div>    
+                                <div class="col-2"><img src="./assets/img/Clients/MSRDC.jpeg" alt="Kochi Metro"></div>   
+                                <div class="col-2"><img src="./assets/img/Clients/nabard.jpg"alt="NTPC"></div>      
+                                <div class="col-2"><img src="./assets/img/Clients/MMB.png" alt="Airport Authority"></div>        
+                                <div class="col-2"><img src="./assets/img/Clients/MMM.jfif" alt="Ashoka Buildcon"></div>
+                                       
+                            </div>
+                        </div>
+                    </div>
 
-                  <!-- Slide 3 -->
-                  <div class="carousel-item">
-                      <div class="container">
-                          <div class="row">
-                              <div class="col-3"><img src="./assets/img/Clients/NCL.avif" alt="NHPC"></div>
-                              <div class="col-3"><img src="./assets/img/Clients/NHAI.jpg" alt="MORTH"></div> 
-                              <div class="col-3"><img src="./assets/img/Clients/NHPC.png" alt="MMB"></div>
-                              <div class="col-3"><img src="./assets/img/Clients/NTPC.jpg" alt="L&T"></div>
-                              
-                          </div>
-                          <div class="row">
-                              <div class="col-3"><img src="./assets/img/Clients/PUNE METRO.png"alt="Indian Railways"></div>       
-                              <div class="col-3"><img src="./assets/img/Clients/PUNE MNP.webp"alt="Indian Railways"></div>    
-                              <div class="col-3"><img src="./assets/img/Clients/PWD.jpeg" alt="Indian Railways"></div>
-                              <div class="col-3"><img src="./assets/img/Clients/RAILWAY.png"  alt="Ashoka Buildcon"></div>
-                                    
-                          </div>
-                      </div>
-                  </div>
-              </div>
-
+                    <!-- Slide 3 -->
+                    <div class="carousel-item">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-3"><img src="./assets/img/Clients/NCL.avif" alt="NHPC"></div>
+                                <div class="col-3"><img src="./assets/img/Clients/NHAI.jpg" alt="MORTH"></div> 
+                                <div class="col-3"><img src="./assets/img/Clients/NHPC.png" alt="MMB"></div>
+                                <div class="col-3"><img src="./assets/img/Clients/NTPC.jpg" alt="L&T"></div>
+                                
+                            </div>
+                            <div class="row">
+                                <div class="col-3"><img src="./assets/img/Clients/PUNE METRO.png"alt="Indian Railways"></div>       
+                                <div class="col-3"><img src="./assets/img/Clients/PUNE MNP.webp"alt="Indian Railways"></div>    
+                                <div class="col-3"><img src="./assets/img/Clients/PWD.jpeg" alt="Indian Railways"></div>
+                                <div class="col-3"><img src="./assets/img/Clients/RAILWAY.png"  alt="Ashoka Buildcon"></div>
+                                      
+                            </div>
+                        </div>
+                    </div>
+                </div>
                   <!-- Controls -->
 
                   <br><br>
@@ -385,6 +390,57 @@
             s1.setAttribute('crossorigin', '*');
             s0.parentNode.insertBefore(s1, s0);
         })();
+
+//////////////////////////////////////////////////////////
+
+// Initialize EmailJS
+(function() {
+            emailjs.init("M84_O1U6jLux6Gb3u"); // Replace YOUR_USER_ID with your EmailJS User ID
+        })();
+
+        // Get form element
+        const form = document.getElementById("my-form");
+
+        // Handle form submission
+        form.addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            // Get values from the form
+            const name = document.getElementById("name").value;
+            // const lastName = document.getElementById("last name").value;
+            const email = document.getElementById("email").value;
+            const date = document.getElementById("date").value;
+            // const rating = document.querySelector("rate").value ;
+            const comments = document.getElementById("comments").value;
+
+            // Prepare the email data
+            const emailParams = {
+                name: name,
+                email: email,
+                date: date,
+                // rating: rate,
+                comments: comments
+            };
+
+            // Send email using EmailJS
+            emailjs.send("service_8lo5utf", "template_jhn9z2e", emailParams)
+                .then(function(response) {
+                    alert("Feedback sent successfully!");
+                    form.reset(); // Clear form after submission
+                }, function(error) {
+                    alert("Error sending feedback. Please try again later.");
+                });
+        });
+    </script>
+
+
+
+
+
+
+
+
+
 
     </script>
 
