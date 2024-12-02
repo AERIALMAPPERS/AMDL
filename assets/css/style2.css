@@ -14,7 +14,6 @@ canvas {
   background-color: #fff;
   /* background: #f3f9f1; */
   padding: 40px 0 80px 0;
-  
 }
 #sector2 div, #sector4 div, #sector6 div, #sector8 div{
   box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
@@ -32,6 +31,12 @@ canvas {
   padding: 40px 0 80px 0;
 
 }
+#sector1 img, #sector3 img, #sector5 img, #sector7 img, #sector9 img, #sector11 img, #sector13 img, #sector15 img, #sector17 img{
+  height: 500px; width:100%;
+    }
+    #sector2 img, #sector4 img, #sector6 img, #sector8 img, #sector10 img, #sector12 img, #sector14 img, #sector16 img, #sector16 img {
+      height: 500px; width:100%;
+  }
 #sector1, #sector3, #sector5, #sector7, #sector9, #sector11, #sector13, #sector15, #sector17 {
   background: #f7f7f7;
   /* background: #f3f9f1; */
@@ -74,6 +79,17 @@ margin-left: 40%;
   100% {
     transform: rotate(360deg);
   }
+}
+@media (max-width: 500px) {
+  #sector1 img, #sector3 img, #sector5 img, #sector7 img, #sector9 img, #sector11 img, #sector13 img, #sector15 img, #sector17 img{
+height: 50px;
+  width: 50%;
+
+  }
+  #sector2 img, #sector4 img, #sector6 img, #sector8 img, #sector10 img, #sector12 img, #sector14 img, #sector16 img, #sector16 img {
+    width: 50%;
+    height: 50px;
+}
 }
 /*-------------------- sectors type Section end -----------------------*/
 
