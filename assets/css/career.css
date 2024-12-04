@@ -52,7 +52,7 @@
 
 /* Centered heading style */
 h1 {
-    position: absolute; /* Position heading absolutely */
+    position: absolute;  
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -63,25 +63,54 @@ h1 {
 }
 /* Create an animation effect for the images */
 
-.animation {
-    overflow: hidden; /* Hide overflow to create a sliding effect */
-    width: 100%; /* Container width */
-    height: 300px; /* Set a height that fits your images */
+/* .animation {
+    overflow: hidden;  
+    width: 100%;  
+    height: 300px;  
     position: relative;
   }
   
   .slider {
-    display: flex; /* Display images in a row */
+    display: flex; 
     width: 100%;
     height: 200px;
-    animation: slide 10s linear infinite; /* Sliding animation */
+    animation: slide 10s linear infinite;  
   }
   
   .slider img {
   
-    width: 100%; /* Each image takes up the full width of the container */
-    /* flex-shrink: 0;  */
-  }
+    width: 100%;  
+     
+  } */
+  .annnimation {
+    overflow-x: auto; /* Enable horizontal scrolling */
+    scroll-snap-type: x mandatory; /* Enable snap scrolling */
+    height: 200px; /* Adjust height for smaller screens */
+    -ms-overflow-style: none; /* Hide scrollbar for IE and Edge */
+    scrollbar-width: none; /* Hide scrollbar for Firefox */
+}
+
+.annnimation::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for Chrome, Safari, and Opera */
+}
+
+.slider {
+  width: 20%;
+ height: 200px;
+  /* height: 100px; */
+    /* width: auto;  */
+    /* Adjust width to fit the content */
+    animation: none; /* Disable animation on mobile */
+    display: flex; /* Display images in a row */
+}
+
+.slider img {
+    width: auto; /* Maintain the natural size of images */
+    flex: 0 0 80%; /* Each image takes up 80% of the container width */
+    scroll-snap-align: center; /* Snap each image to the center */
+    margin-right: 10px; /* Add spacing between images */
+    object-fit: cover; /* Maintain aspect ratio */
+}
   
   @keyframes slide {
     0% {
