@@ -314,7 +314,7 @@ h6 {
 
 .contact-info p {
   margin: 10px 0;
-  font-size: 14px;
+  font-size: 13px;
   display: flex;
   color: #fff;
   align-items: center;
@@ -941,6 +941,7 @@ section {
 .box h4 {
   margin-top: 10px;
   font-weight: bold;
+  color: #383838;
   /* font-size: 1.2em; */
 }
 
