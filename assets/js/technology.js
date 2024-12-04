@@ -33,4 +33,4 @@ let currentIndex = 1;
     }
 
     // Set an interval to automatically change Technology every 5 seconds
-    setInterval(nextTechnology, 4000);
+    setInterval(nextTechnology, 8000);

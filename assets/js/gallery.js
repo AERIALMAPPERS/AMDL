@@ -6,7 +6,7 @@ const imageSets = {
         "./assets/img/Gallery/festival/Festival-3.1.jpeg", "./assets/img/Gallery/festival/Festival-5.jpeg",
         "./assets/img/Gallery/festival/Festival-6.jpeg", "./assets/img/Gallery/festival/Festival-4.1.jpeg",
         "./assets/img/Gallery/festival/Festival-7.jpeg", "./assets/img/Gallery/festival/Festival-10.jpeg",
-        //  "./assets/img/Gallery/festival/MyPic.jpeg", 
+        
         //  " ./assets/img/Gallery/festival/DasaraVideo.mp4"        
     ],
     Labs: ["./assets/img/Gallery/labs/Lab-1.jpeg", "./assets/img/Gallery/labs/Lab2.jpeg",

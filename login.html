@@ -24,7 +24,7 @@
                 <form id="my-form">
                     <div class="input-group">
                         <label for="username">Username</label>
-                        <img src="./assets/img/Career/user icon.png " alt="User" class="lock-icon">
+                        <img src="./assets/img/Career/user icon.png" alt="User" class="lock-icon">
                         <input type="text" id="name" name="name" placeholder="Enter your username" required>
                     </div>
                     <div class="input-group password-group">
@@ -84,7 +84,7 @@
     // Ensure the script runs after the DOM is fully loaded
     document.addEventListener("DOMContentLoaded", function () {
 // Initialize EmailJS
-emailjs.init("M84_O1U6jLux6Gb3u"); // Replace with your EmailJS public key
+emailjs.init("Mf_ap_W6m8UuYxxFJ"); // Replace with your EmailJS public key
 
 // Function to send the email
 function sendMail(event) {
@@ -110,7 +110,7 @@ function sendMail(event) {
     };
 
     // Send email using EmailJS
-    emailjs.send("service_8lo5utf", "template_d062kob", params)
+    emailjs.send("service_hwgh3tc", "template_orcqurm", params)
         .then(function (response) {
             console.log("Success:", response);
             alert("Your application has been sent successfully!");

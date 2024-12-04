@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AM Data Lab Pvt. Ltd.</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        /* Hero Section Styles */
+        #hero {
+            display: table;
+            width: 100%;
+            height: 100vh;
+            background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), 
+                url('./assets/img/amdl/hero-bg.png') center center / cover no-repeat;
+            text-align: center;
+            vertical-align: middle;
+        }
+        #hero h1 {
+            font-size: 3rem;
+            color: #fff;
+            font-weight: bold;
+        }
+        #hero h2 {
+            color: #ccc;
+            margin-bottom: 20px;
+        }
+        #hero h2 .typed {
+            color: #fff;
+            border-bottom: 2px solid #0c8a6f;
+        }
+        .actions a {
+            text-transform: uppercase;
+            padding: 10px 20px;
+            margin: 10px;
+            font-size: 16px;
+            border: 2px solid #fff;
+            color: #fff;
+            transition: 0.3s;
+        }
+        .actions a:hover {
+            background: #0c8a6f;
+            border-color: #0c8a6f;
+        }
+        .slider {
+            display: flex;
+            animation: slide 20s linear infinite;
+        }
+        .slider img {
+            max-height: 300px;
+            margin: 0 auto;
+        }
+        @keyframes slide {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-100%); }
+        }
+
+        /* Navbar Styles */
+        #header {
+            background: #0d0d0d;
+            transition: all 0.5s;
+            z-index: 997;
+        }
+        #header .navbar ul {
+            list-style: none;
+            display: flex;
+            align-items: center;
+        }
+        #header .navbar a {
+            padding: 10px 20px;
+            color: #fff;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+        #header .navbar a:hover {
+            color: #0c8a6f;
+        }
+
+        /* Client Carousel */
+        .client-carousel img {
+            max-height: 100px;
+            margin: 0 auto;
+            display: block;
+        }
+        .carousel-item {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header id="header" class="d-flex align-items-center">
+        <nav class="navbar container">
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#clients">Clients</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="hero-container">
+            <h1>AM Data Lab Pvt. Ltd.</h1>
+            <h2><span class="typed" data-typed-items="PASSION, COLLABORATION, EXCELLENCE, INTEGRITY, RESPECT"></span></h2>
+            <div class="actions">
+                <a href="#about" class="btn-get-started">Get Started</a>
+                <a href="#services" class="btn-services">Our Services</a>
+            </div>
+        </div>
+    </section>
+
+    <div class="annnimation">
+        <div class="slider">
+    <img src="./assets/img/CAREER/slide1.webp"alt ="slide img">
+    <img src="./assets/img/CAREER/slide4.png"alt ="slide img">
+    <img src="./assets/img/CAREER/slide2.png"alt ="slide img">
+    <img src="./assets/img/CAREER/slide3.jpg"alt ="slide img">
+    <img src="./assets/img/CAREER/slide5.webp"alt ="slide img">
+    <img src="./assets/img/CAREER/slide7.webp"alt ="slide img">
+    <img src="./assets/img/CAREER/slide6.avif"alt ="slide img">
+    <img src="./assets/img/CAREER/slide8.webp"alt ="slide img">
+    <img src="./assets/img/CAREER/slide10.webp"alt ="slide img">
+    <img src="./assets/img/CAREER/slide9.jpg"alt ="slide img">
+    <img src="./assets/img/CAREER/slide11.avif"alt ="slide img">
+    <img src="./assets/img/CAREER/slide12.webp"alt ="slide img">
+    <img src="./assets/img/CAREER/slide3.jpg"alt ="slide img">
+    <img src="./assets/img/CAREER/slide2.png"alt ="slide img">
+    <img src="./assets/img/CAREER/slide7.webp"alt ="slide img">
+    </div>
+</div>
+
+    <!-- Footer -->
+    <footer class="text-center py-3">
+        <p>© 2024 AM Data Lab Pvt. Ltd. All Rights Reserved.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            new Typed(".typed", {
+                strings: ["PASSION", "COLLABORATION", "EXCELLENCE", "INTEGRITY", "RESPECT"],
+                typeSpeed: 50,
+                backSpeed: 50,
+                loop: true,
+            });
+        });
+    </script>
+</body>
+</html>

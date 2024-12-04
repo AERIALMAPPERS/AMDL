@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+    <style>
+        /* Basic styling for form */
+        .form-container {
+            max-width: 400px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .input-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input, textarea, button {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .stars span {
+            cursor: pointer;
+            font-size: 20px;
+            color: #ccc;
+        }
+        .stars span.selected {
+            color: gold;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h1>Feedback Form</h1>
+        <form id="feedbackForm">
+            <div class="input-group">
+                <label>Name:</label>
+                <div class="name-fields">
+                    <input type="text" name="firstName" placeholder="First Name" required>
+                    <input type="text" name="lastName" placeholder="Last Name" required>
+                </div>
+            </div>
+
+            <div class="input-group">
+                <label>Email-ID:</label>
+                <input type="email" name="email" placeholder="example@gmail.com" required>
+            </div>
+
+            <div class="input-group">
+                <label>Date:</label>
+                <input type="date" name="date" required>
+            </div>
+
+            <div class="input-group">
+                <label>Services Rating:</label>
+                <div class="stars">
+                    <span data-value="1">★</span>
+                    <span data-value="2">★</span>
+                    <span data-value="3">★</span>
+                    <span data-value="4">★</span>
+                    <span data-value="5">★</span>
+                </div>
+                <input type="hidden" name="rating" id="rating" value="0">
+            </div>
+
+            <div class="input-group">
+                <label>Comments and Feedback:</label>
+                <textarea name="comments" placeholder="Write your comments here..." rows="4" required></textarea>
+            </div>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+        // Initialize EmailJS
+        (function() {
+            emailjs.init("YOUR_PUBLIC_KEY"); // Replace with your EmailJS public key
+        })();
+
+        // Handle form submission
+        document.getElementById("feedbackForm").addEventListener("submit", function(e) {
+            e.preventDefault();
+
+            // Collect form data
+            const form = e.target;
+            const formData = new FormData(form);
+            const data = {
+                firstName: formData.get("firstName"),
+                lastName: formData.get("lastName"),
+                email: formData.get("email"),
+                date: formData.get("date"),
+                rating: formData.get("rating"),
+                comments: formData.get("comments"),
+            };
+
+            // Send email using EmailJS
+            emailjs.send("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", data)
+                .then(() => {
+                    alert("Feedback sent successfully!");
+                    form.reset();
+                })
+                .catch((error) => {
+                    console.error("Error sending feedback:", error);
+                    alert("Failed to send feedback. Please try again.");
+                });
+        });
+
+        // Handle star rating
+        const stars = document.querySelectorAll(".stars span");
+        stars.forEach(star => {
+            star.addEventListener("click", function() {
+                // Highlight selected stars
+                stars.forEach(s => s.classList.remove("selected"));
+                for (let i = 0; i < this.dataset.value; i++) {
+                    stars[i].classList.add("selected");
+                }
+                // Set rating value
+                document.getElementById("rating").value = this.dataset.value;
+            });
+        });
+    </script>
+</body>
+</html>

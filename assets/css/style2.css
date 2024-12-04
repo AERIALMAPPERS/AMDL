@@ -7,12 +7,9 @@ canvas {
 #sectors{
    /* background: #fffaed; */
    background: #f3f9f1;
-     /* background: #f7f7f7; */
-   /* background-color: #fff; */
 }
 #sector2, #sector4, #sector6, #sector8, #sector10, #sector12, #sector14, #sector16, #sector16 {
   background-color: #fff;
-  /* background: #f3f9f1; */
   padding: 40px 0 80px 0;
 }
 #sector2 div, #sector4 div, #sector6 div, #sector8 div{
@@ -39,14 +36,10 @@ canvas {
   }
 #sector1, #sector3, #sector5, #sector7, #sector9, #sector11, #sector13, #sector15, #sector17 {
   background: #f7f7f7;
-  /* background: #f3f9f1; */
-   /* background-color: #fff; */
   padding: 40px 0 80px 0;
 }
 #sectors .btn {
-  /* background-color:#60f380; */
   background-color: rgb(57, 163, 89); 
-  /* background-color: #0f1a77; */
   color: #000000;
   /* color: #fff; */
   border-radius: 20px;
@@ -96,10 +89,8 @@ height: 50px;
 /*  image slideshow Section
 --------------------------------*/
 #slider-container {
-  /* width: 100%; */
   overflow: hidden;
   position: relative;
-  /* max-width: 600px; */
   margin: auto;
 }
 
@@ -134,7 +125,6 @@ height: 50px;
 /*-------------------- vision & mission -----------------------*/
 #visionMission{
   background: linear-gradient(rgba(41, 35, 35, 0.6), rgba(20, 18, 18, 0.6)), url(../img/VissionMission/bg2.jpg) fixed center center;
-  /* background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/DustpanDredge.jfif) fixed center center; */
     background-size: cover;
     padding-top: 10px;
     padding-right: 10px;
@@ -146,7 +136,6 @@ margin-top: 50px;
 #visionMission h2{
   color: #f8f4f1;
   margin-top: 50px;
-  /* font-size: larger; */
   text-align: center;
   font-weight: bold;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -256,8 +245,6 @@ font-style: italic;
   font-size: 18px;
   margin: 0 2px;
 }
-
-
 /* =======================Team Section===========================================================================================--------*/
 
 /* =======================values Section========--------*/
@@ -293,12 +280,8 @@ box-sizing: border-box;
 }
 /* =======================values Section========--------*/
 
-
-
 /* event.html page */
 /* ==============================================Event Start ====================================================> */
-
-
 
 .main-content h2 {
   margin-top: 10px;
@@ -313,9 +296,6 @@ box-sizing: border-box;
 .events-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
-  /* justify-items: center; */
-  /* gap: 2px; */
-  /* border: 1px solid blue; */
 }
 
 .event-card {
@@ -375,7 +355,6 @@ box-sizing: border-box;
 
 .carousel-item {
   display: none;
-  /* Hide all slides by default */
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -383,28 +362,17 @@ box-sizing: border-box;
 
 .carousel-item.active {
   display: flex;
-  /* Show only the active slide */
 }
 
 .carousel-item .row {
   margin-bottom: 15px;
-  /* Add spacing between rows */
 }
 
 .carousel-item img {
   width: 120px;
-  /* Set consistent width for logos */
   height: auto;
-  /* Maintain aspect ratio */
   margin: 15px;
-  /* Add spacing between logos */
 }
-
-/* .client-carousel {
-  text-align: center;
-  background-color: #fff;
-  padding: 30px 0;
-} */
 
 .carousel-indicators [data-bs-target] {
   background-color: #00a651;
@@ -426,11 +394,8 @@ box-sizing: border-box;
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
   background-color: #00a651;
-  /* Green background for buttons */
   border-radius: 50%;
-  /* Make buttons circular */
   padding: 10px;
-  /* Add padding inside buttons */
 }
 
 .carousel-control-prev,
