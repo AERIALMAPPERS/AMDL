@@ -164,6 +164,17 @@ font-style: italic;
   align-items: center;
   justify-content: center;
 }
+#videoInd{
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+#videoInd video::-internal-media-controls {
+  display: none;
+}
+#videoInd video::-webkit-media-controls {
+  display: none;
+}
  
 /*-------------------- gallery-====================================----------------------*/
 #gallery{
