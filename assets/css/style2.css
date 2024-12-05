@@ -124,7 +124,7 @@ height: 50px;
 
 /*-------------------- vision & mission -----------------------*/
 #visionMission{
-  background: linear-gradient(rgba(41, 35, 35, 0.6), rgba(20, 18, 18, 0.6)), url(../img/VissionMission/bg2.jpg) fixed center center;
+  background: linear-gradient(rgba(41, 35, 35, 0.6), rgba(20, 18, 18, 0.6)), url(../img/VissionMission/PageBack.avif) fixed center center;
     background-size: cover;
     padding-top: 10px;
     padding-right: 10px;
@@ -157,6 +157,12 @@ font-style: italic;
 .col-md-3 img{
   width: 20%;
   height: 20%;
+}
+#weHave{
+  /* align-items: center; */
+  text-align: center;
+  align-items: center;
+  justify-content: center;
 }
  
 /*-------------------- gallery-====================================----------------------*/
@@ -417,8 +423,12 @@ box-sizing: border-box;
 
  /* <!-- =====================================  END OUR CLIENT ========================================= --> */
 
- .aboutCompany{
-  background-image: linear-gradient(rgba(14, 14, 19, 0.808), rgba(48, 51, 58, 0.6)), url('../img/Career/b1.webp');
+  /* <!-- =====================================  COMPANTY========================================= --> */
+
+ .aboutCompany{ 
+  background-image: linear-gradient(rgba(14, 14, 19, 0.808), rgba(48, 51, 58, 0.6)), url('../img/bg/BS5.jpg');
+  /* background-image: linear-gradient(rgba(14, 14, 19, 0.808), rgba(48, 51, 58, 0.6)), url('../img/bg/BS4.jpg'); */
+  /* background-image: linear-gradient(rgba(14, 14, 19, 0.808), rgba(48, 51, 58, 0.6)), url('../img/Career/b1.webp'); */
   /* background-color: #d19e9e; */
   background-size: cover;
   background-position: center;

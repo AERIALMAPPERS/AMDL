@@ -849,35 +849,51 @@
     <!--=========================== END SECTORS AND SERVICES ==========================================-->
 
     <!-- ========================================= Blog Section ================================================== -->
+
     <section id="blog">
       <div class="container" data-aos="fade-up">
-        <div class="row">
+        <div class="row" id="blogQuote">
           <div class="col-md-12">
             <h3 class="section-title">Blog</h3>
             <div class="section-title-divider"></div>
-            <p class="section-description">
-              Wings To Yor Thought.....!!!</p>
+            <!-- <p class="section-description">Wings To Yor Thought.....!!!</p> -->
+            <section id="blogQuote">
+              <div class="container" data-aos="fade-up">
+                <div class="row">
+                  <div class="col-md-12">
+                    <img id="blogImage1" src="./assets/img/BLOG/BLOG1.jpg" alt="Main Blog Image 1" style=" display: block;">
+                    <img id="blogImage2" src="./assets/img/BLOG/BLOG2.jpg" alt="Main Blog Image 2" style=" display: none;">
+                  </div>
+                </div>
+              <!-- </div> -->
+            </section>
           </div>
         </div>
-
-        <section id="blogQuote">
-          <div class="container" data-aos="fade-up">
-            <!-- <img src="assets/img/dregers.jpeg" alt=""> -->
-            <div class="row">
-              <div class="col-md-8">
-                <!-- <div class="quote"> -->
-                <b><img src="#imgggg path" alt="" style="margin-left: 100px;"></b>
-                <h3 class="blogQuote-title"> WHAT WE OFFER IS………,</h3>
-                <h3 class="blogQuote-title"> MORE PRODUCTION ,</h3>
-                <h3 class="blogQuote-title">WITH LESS TIME.</h3>
-                <small> <b> <img src="#imgggg path" alt="" style="float: right;margin-right:0px;"> </b></small>
-                <!-- </div> -->
-              </div>
-            </div>
-          </div>
-      </div>
+    
+        
       </div>
     </section>
+    
+    <script>
+      // Get the images
+      const image1 = document.getElementById('blogImage1');
+      const image2 = document.getElementById('blogImage2');
+    
+      // Function to toggle visibility of images
+      function toggleImages() {
+        if (image1.style.display === 'block') {
+          image1.style.display = 'none';
+          image2.style.display = 'block';
+        } else {
+          image1.style.display = 'block';
+          image2.style.display = 'none';
+        }
+      }
+    
+      // Set an interval to toggle images every 3 seconds
+      setInterval(toggleImages, 3000); // 3000 milliseconds = 3 seconds
+    </script>
+    
     <!--===================================== End Blog Section ===============================================-->
 
     <!--===================================== WHY WE CHOOSE ===============================================-->

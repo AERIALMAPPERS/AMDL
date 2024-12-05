@@ -1,7 +1,8 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: url('../img/Career/b11.jpg') no-repeat center center fixed;
+    /* background: url('../img/Career/b11.jpg') no-repeat center center fixed; */
+     background-image: linear-gradient(rgba(60, 60, 65, 0.808), rgba(51, 52, 54, 0.6)), url('../img/bg/BS6.jpg');
     background-size:cover;
     display: flex;
     justify-content: center;
