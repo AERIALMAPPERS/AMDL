@@ -17,61 +17,62 @@
 <body>
     <section>
     <main id="main">
-        <img src="./assets/img/Career/position1.jpeg" alt="" id="hiring">
+        <img src="./assets/img/Career/HiringImg.jpeg" alt="" id="hiring">
         <div class="login-container">
             <div class="login-form">
                 <h1>Apply</h1>
                 <form id="my-form">
                     <div class="input-group">
                         <label for="username">Username</label>
-                        <img src="./assets/img/Career/user icon.png" alt="User" class="lock-icon">
+                        <img src="./assets/img/Career/user icon.png" alt="User Icon" class="lock-icon">
                         <input type="text" id="name" name="name" placeholder="Enter your username" required>
                     </div>
+                
                     <div class="input-group password-group">
-                        <label for="password">Email</label>
-                        <!-- Lock Icon for Password -->
-                        <img src="./assets/img/Career/email.png" alt="Lock" class="lock-icon">
+                        <label for="email">Email</label>
+                        <img src="./assets/img/Career/email.png" alt="Email Icon" class="lock-icon">
                         <input type="email" id="email" name="email" placeholder="Enter your email" required>
                     </div>
+                
                     <div class="input-group password-group">
-                        <label for="password">Contact</label>
-                    
-                        <img src="./assets/img/Career/phone.png" alt="Lock" class="lock-icon">
-                        <input type="text" id="contact" name="contact" placeholder="Enter your contact number" required>
-                        
+                        <label for="contact">Contact</label>
+                        <img src="./assets/img/Career/phone.png" alt="Phone Icon" class="lock-icon">
+                        <input type="tel" id="contact" name="contact" placeholder="Enter your contact number" pattern="[0-9]{10}" title="Enter a valid 10-digit contact number" required>
                     </div> 
+                
                     <div class="input-group">
                         <label for="address">Address</label>
-                        <img src="./assets/img/Career/address.png" alt="Address" class="lock-icon">
+                        <img src="./assets/img/Career/address.png" alt="Address Icon" class="lock-icon">
                         <input type="text" id="address" name="address" placeholder="Enter your address" required>
                     </div>
+                
                     <div class="input-group">
                         <label for="post">Post Apply</label>
                         <select id="post" name="post" required>
-                            <option value="GIS Analysis">GIS ANALYST</option>
-                            <option value="ITI">FIELD SURVEYOR</option>
-                            <option value="Surveyor">CIVIL ENGINEER</option>
-                            <!-- <option value="Technician">Technician</option> -->
+                            <option value="GIS Analyst">GIS Analyst</option>
+                            <option value="Field Surveyor">Field Surveyor</option>
+                            <option value="Civil Engineer">Civil Engineer</option>
                         </select>
                     </div>
-    
-    
-                    <!-- <div class="input-group password-group"> -->
-                        <!-- <label for="password">Message</label> -->
-                        <label for="message">Message</label> <BR></BR>
-                        <textarea id="message" name="message" placeholder="Your Message" required></textarea>
-                       
-                   
-                        <!-- <input type="text" id="message" name="message" placeholder="Enter the message if you instreted" required> -->
-                    <!-- </div> -->
-              
-                    <div class="button-group">
-                        <button type="submit">submit</button>
+                
+                    <div class="input-group">
+                        <label for="message">Message</label> 
+                        <textarea id="message" name="message" placeholder="Your message" rows="4" required></textarea>
                     </div>
-                    <!-- <div class="links">
-                        <a href="#">Forgot Password?</a> | <a href="./signup.html">Sign-Up</a>
-                    </div> -->
+                
+                    <div class="button-group">
+                        <button type="submit">Submit</button>
+                    </div>
+                
+                    <p>OR  </p>
+                
+                    <!-- Add the downloadable Word file link -->
+                    <p>
+                        Download the application form & Send on Email  <BR></BR>
+                        <a href="./assets/img/Career/Job_Application_Form.doc" download="ApplicationForm.docx">Application Form </a>
+                    </p>
                 </form>
+                
             </div>
 
         </div>
